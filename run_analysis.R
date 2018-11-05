@@ -130,4 +130,4 @@ mean_set <- activity_subset %>%
   group_by(activity_labels.V2,subject)%>%
   summarise_all(mean)
 
-write.table(mean_set,file=.txt, row.names = FALSE)
+write.table(mean_set,file="Output.txt", row.names = FALSE)
